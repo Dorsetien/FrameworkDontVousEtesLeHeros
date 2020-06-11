@@ -1,0 +1,13 @@
+<texte_debut>
+Lire ceci paragraphe 006
+Vous gagnez 5 pièces d'or
+Vous irez au 014 pour perdre 2 pièces d'or 
+<texte_fin>
+
+<choix_paragraphes_debut>
+014
+<choix_paragraphes_fin>
+
+<or_debut>
+5
+<or_fin>

@@ -1,0 +1,16 @@
+<texte_debut>
+paragraphe 005
+vous devez tenter votre chance
+
+Vous êtes chanceux allez au 012
+Vous êtes malchanceux allez au 013
+
+<texte_fin>
+
+<choix_paragraphes_debut>
+012;013
+<choix_paragraphes_fin>
+
+<tentez_votre_chance_debut>
+1
+<tentez_votre_chance_fin>

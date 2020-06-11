@@ -1,0 +1,12 @@
+<texte_debut>
+Paragraphe 008
+Vous perdez un point d'habilete.  Allez au 017 pour gagner un point de chance.
+<texte_fin>
+
+<choix_paragraphes_debut>
+017
+<choix_paragraphes_fin>
+
+<habilete_debut>
+-1
+<habilete_fin>

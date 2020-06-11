@@ -1,0 +1,13 @@
+<texte_debut>
+Lire ceci paragraphe 014
+Vous mourrez en allant au 016
+Vous pouvez aller chercher le bouclier au 007
+<texte_fin>
+
+<choix_paragraphes_debut>
+016;007
+<choix_paragraphes_fin>
+
+<or_debut>
+-2
+<or_fin>

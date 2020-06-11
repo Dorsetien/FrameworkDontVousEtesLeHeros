@@ -1,0 +1,12 @@
+<texte_debut>
+Ceci est le texte du paragraphe 015
+Allez au 017 pour gagner le bouclier
+<texte_fin>
+
+<habilete_debut>
+1
+<habilete_fin>
+
+<choix_paragraphes_debut>
+017
+<choix_paragraphes_fin>

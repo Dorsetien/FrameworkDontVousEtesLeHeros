@@ -1,0 +1,15 @@
+<texte_debut>
+Tentez votre chance!
+
+Si vous êtes chanceux vous pouvez aller au 023
+Si vous êtes malchanceux, vous allez combattre au 024
+
+<texte_fin>
+
+<choix_paragraphes_debut>
+023;024
+<choix_paragraphes_fin>
+
+<tentez_votre_chance_debut>
+1
+<tentez_votre_chance_fin>

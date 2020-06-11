@@ -1,0 +1,18 @@
+<texte_debut>
+Lire ceci paragraphe 018
+
+Allez vous prendre la direction du :
+Nord : allez au 019 (dague avec gain de 1 d'habileté)
+Sud : allez au 020 pour perdre un item qui n'existe pas (armure)
+Est : allez au 021 pour lire texte uniquement
+Ouest : allez au 022
+
+<texte_fin>
+
+<choix_paragraphes_debut>
+019;020;021;022
+<choix_paragraphes_fin>
+
+<points_de_chance_debut>
+-1
+<points_de_chance_fin>

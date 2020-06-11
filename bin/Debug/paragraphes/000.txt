@@ -1,0 +1,20 @@
+<texte_debut>
+Dans un monde en déchéance, vous êtes le seul chevalier à pouvoir mettre un terme à l'obscurité qui s'étend jusqu'au royaume des hommes.
+Rendez-vous au paragraphe 001
+<texte_fin>
+
+<arriere_plan_image_debut>
+images\\000-arriere-plan.png
+<arriere_plan_image_fin>
+
+<choix_paragraphes_debut>
+001
+<choix_paragraphes_fin>
+
+<ennemi_image_debut>
+images\\chateau_petit.png
+<ennemi_image_fin>
+
+<heros_image_debut>
+images\\000-heros.png
+<heros_image_fin>

@@ -1,0 +1,19 @@
+<texte_debut>
+Lire ceci paragraphe 004
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+
+Vous trouvez une épée
+
+Si vous désirez aller au 010 pour affronter un ennemi
+
+
+<texte_fin>
+
+<choix_paragraphes_debut>
+010
+<choix_paragraphes_fin>
+
+<equipement_debut>
+épée;2;0;0
+<equipement_fin>

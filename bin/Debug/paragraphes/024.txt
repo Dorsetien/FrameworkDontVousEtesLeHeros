@@ -1,0 +1,18 @@
+<texte_debut>
+vous êtes au 024
+
+Vous allez combattre une horde de démons
+
+Si vous gagnez, allez au 023
+<texte_fin>
+<choix_paragraphes_debut>
+023
+<choix_paragraphes_fin>
+
+<ennemi_image_debut>
+images\\024-bois_malefique.jpg
+<ennemi_image_fin>
+
+<ennemi_points_debut>
+100;10
+<ennemi_points_fin>

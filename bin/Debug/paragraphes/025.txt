@@ -1,0 +1,19 @@
+<texte_debut>
+Texte du 025
+
+Vous perdez la dague et le bouclier
+Allez au 026
+
+<texte_fin>
+
+<choix_paragraphes_debut>
+026
+<choix_paragraphes_fin>
+
+<equipement2_debut>
+-bouclier
+<equipement2_fin>
+
+<equipement_debut>
+-dague
+<equipement_fin>

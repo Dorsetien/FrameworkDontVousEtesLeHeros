@@ -1,0 +1,37 @@
+<texte_debut>
+Lire ceci paragraphe 000
+
+ligne blanche avant
+
+Ceci est une ligne très longue à lire et contient plusieurs mots.  Ceci est une ligne très longue à lire et contient plusieurs mots.  Ceci est une ligne très longue à lire et contient plusieurs mots.  
+
+Si vous désirez aller au 002 pour tester cliquez sur le bouton approprié.
+Si vous désirez aller au 003 pour tester autre combat cliquez sur le bouton approprié
+Si vous désirez aller au 009 pour tester autre combat cliquez sur le bouton approprié
+Si vous désirez aller au 010 pour tester autre combat cliquez sur le bouton approprié
+Si vous désirez aller au 011 pour tester autre combat cliquez sur le bouton approprié
+<texte_fin>
+
+<choix_debut>
+002;003;009;010
+<choix_fin>
+
+<heros_debut>
+images\\0001-heros.png
+<heros_fin>
+
+<ennemi_image_debut>
+images\\0002-ennemi1.png
+<ennemi_image_fin>
+
+<ennemi_points_debut>
+5;5
+<ennemi_points_fin>
+
+<equipement_debut>
+bouclier;2;2;2
+<equipement_fin>
+
+<equipement2_debut>
+arc;3;3;3
+<equipement2_fin>

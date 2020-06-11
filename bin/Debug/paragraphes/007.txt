@@ -1,0 +1,15 @@
+<texte_debut>
+Paragraphe 007
+
+Vous trouvez un bouclier!
+
+Allez au 017 pour gagner un point de chance
+<texte_fin>
+
+<choix_paragraphes_debut>
+017
+<choix_paragraphes_fin>
+
+<equipement_debut>
+bouclier;1;1;1
+<equipement_fin>

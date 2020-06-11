@@ -1,0 +1,13 @@
+<texte_debut>
+Fin, vous avez gagné!
+Bravo!
+
+<texte_fin>
+
+<choix_paragraphes_debut>
+000
+<choix_paragraphes_fin>
+
+<fin_debut>
+1
+<fin_fin>

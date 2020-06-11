@@ -1,0 +1,12 @@
+<texte_debut>
+Lire ceci paragraphe 011
+
+ligne blanche avant
+
+Envoyé directement du 003 pour combat
+<texte_fin>
+
+<choix_debut>
+003
+<choix_fin>
+

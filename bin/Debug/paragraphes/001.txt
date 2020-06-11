@@ -1,0 +1,19 @@
+<texte_debut>
+Vous démarrez avec 20 pièces d'or
+
+Afin de tester le framework, différents scénarios sont offerts :
+
+Si vous désirez aller au 002 pour combattre un Valvos
+Si vous désirez aller au 003 pour perde un point de vie
+Si vous désirez aller au 004 pour trouver une épée
+Si vous désirez aller au 005 pour tenter votre chance
+Si vous désirez aller au 006 pour gagner 5 pièces d'ord
+<texte_fin>
+
+
+
+<choix_paragraphes_debut>002;003;004;005;006<choix_paragraphes_fin>
+
+<or_debut>
+20
+<or_fin>

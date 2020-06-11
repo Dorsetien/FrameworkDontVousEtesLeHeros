@@ -1,0 +1,15 @@
+<texte_debut>
+Lire ceci paragraphe 019
+
+Vous trouvez une dague
+
+Allez au 023
+<texte_fin>
+
+<choix_paragraphes_debut>
+023
+<choix_paragraphes_fin>
+
+<equipement2_debut>
+dague;1;0;0
+<equipement2_fin>

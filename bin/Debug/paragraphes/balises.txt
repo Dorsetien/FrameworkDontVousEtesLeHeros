@@ -1,0 +1,155 @@
+Le logiciel Framework Dont Vous Êtes Le Héros est développé en c# avec
+le .net Framework 4.7.2 (fait en mai 2020)
+
+Le fichier texte (.txt) ne sera lu qu'à l'intérieur des balises de "debut" et 
+de "fin".  Tout texte situé ailleurs sera ignoré (vous pouvez donc indiquer 
+vos commentaires à l'extérieur des balises au besoin)
+
+Voici les balises disponibles :
+
+<texte_debut>
+<texte_fin>
+
+<choix_paragraphes_debut>
+<choix_paragraphes_fin>
+
+<heros_image_debut>
+<heros_image_fin>
+
+<ennemi_image_debut>
+<ennemi_image_fin>
+
+<ennemi_points_debut>
+<ennemi_points_fin>
+
+<or_debut>
+<or_fin>
+
+<equipment_debut>
+<equipement_fin>
+
+<equipment2_debut>
+<equipement2_fin>
+
+<tentez_votre_chance_debut>
+<tentez_votre_chance_fin>
+
+<habilete_debut>
+<habilete_fin>
+
+<pdv_debut>
+<pdv_fin>
+
+<points_de_chance_debut>
+<points_de_chance_fin>
+
+
+
+
+
+
+
+
+
+Un fichier .txt peut contenir les balises suivantes et ces mots sont réservés
+(ne pas les utiliser dans vos commentaires) :
+
+
+Vous placez votre texte entre ces deux balises:
+
+<texte_debut>
+<texte_fin>
+
+<equipment_debut>
+<equipement_fin>
+
+Vous placez vos choix de numéros de fichiers .txt (ex : 009.txt pour aller au 9)
+entre ces balises.  Les choix doivent être séparés par un ; et ne doit pas 
+dépasser 5 choix.
+
+<choix_paragraphes_debut>
+<choix_paragraphes_fin>
+
+
+Vous placez le chemin menant à votre image de votre héros entre ces balises:
+
+<heros_image_debut>
+<heros_image_fin>
+
+Si un ennemi est rencontré durant un paragraphe, vous devez mettre l'image
+de celui-ci entre ces balises:
+
+<ennemi_image_debut>
+<ennemi_image_fin>
+Dès qu'une image ennemi est placée dans votre fichier texte, cela active le
+mode combat.  Le combat se déroule comme dans les livres dont vous êtes le
+héros (défis fantastiques) : 2 dés + habileté du héros vs 2 dés + habileté
+de l'ennemi.  Le plus fort fait perdre 2 points de vie à l'autre.  En cas 
+d'égalité, chacun perd un PDV.
+
+Votre ennemi doit également avoir des points d'habileté et de vie (PDV).  Vous
+les indiquez en les séparant par un ;
+<ennemi_points_debut>
+<ennemi_points_fin>
+
+Si les balises gérant l'or suivantes sont affichées, la quantité (entier positif
+ou négatif) sera traité dans le paragraphe.  La quantité indiqué sera alors
+ajoutée si c'est un nmbre positif ou retranchée s'il s'agit d'un négatif.
+<or_debut>
+<or_fin>
+
+Vous pouvez ajouter ou retrancher des points de chances à certains paragraphes.
+Pour ce faire, vous ajouter les balises suivantes avec un nombre à l'intérieur.
+Nombre positif, vos points s'ajoutent à vos points de chance, un négatif vous
+en fera perdre.
+<points_de_chance_debut>
+<points_de_chance_fin>
+
+Vous pouvez indiquer ces balises si votre heros doit tentez sa chance
+placez 1 pour l'actvier (ne pas placer les balises sinon)
+<tentez_votre_chance_debut>
+<tentez_votre_chance_fin>
+
+Lors de la lecture d'un paragraphe, vous pouvez obtenir ou perdre de l'équipement.
+Vous indiquer l'équipement gagné en lui donnant un nom, suivi d'un point-virgule (;)
+et d'un chiffre qui augmentera l'habileté du heros, suivi d'un ; et d'un autre
+chiffre qui augmentera ou diminuera ses points de vie, suivi d'un ; et d'un dernier
+chiffre qui fera varier ses points de chance.
+Si le nom de votre équipement début par le signe moins (-) (ex : -arc;1;1;1) alors
+vous perdrez votre arc dans votre équipement et les points indiqué seront retranchés
+pour, dans l'ordre, : habileté;point de vie;chance
+
+<equipment_debut>
+<equipement_fin>
+
+Il y a la possibilité de faire intervenir 2 équipements dans le meême paragraphe
+avec les balises suivantes (qui fonctionnent avec le même principe) :
+
+<equipment2_debut>
+<equipement2_fin>
+
+/*************************************************************************************/
+
+Explication de l'application:
+
+Vous débutez au paragraphe 000.txt qui est une mise en contexte et qui placera votre image
+du heros que vous aurez copiée dans le sous-répertoire "images".
+Dans l'exemple ici, je n'utilise que 3 balises (<texte_debut>, <choix_debut>, <heros_image_debut>).
+L'image de mon héros est au chemin suivant images\000-heros.png (il faut obligatoirement mettre
+deux \\ entre les balises <heros_image_debut> et <heros_image_fin>)
+
+<texte_debut>
+Il était une fois...  blablabla
+Rendez-vous au paragraphe 001
+<texte_fin>
+
+<choix_paragraphes_debut>
+001
+<choix_paragraphes_fin>
+
+<heros_image_debut>
+images\\000-heros.png
+<heros_image_fin>
+
+
+

@@ -1,0 +1,15 @@
+<texte_debut>
+Lire ceci paragraphe 013
+
+Votre malchance vous fait perdre 1 pièce d'or
+
+Allez au 015 pour gagner un point d'habileté
+<texte_fin>
+
+<choix_paragraphes_debut>
+015
+<choix_paragraphes_fin>
+
+<or_debut>
+-1
+<or_fin>

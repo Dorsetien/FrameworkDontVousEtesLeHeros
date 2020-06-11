@@ -1,0 +1,20 @@
+<texte_debut>
+Paragraphe 002
+Vous rencontrez un Valvos et devez le combattre
+
+Si vous désirez fouiller le Valvos allez au 007 (vous trouverez un bouclier)
+Si vous désirez poursuivre au 008 pour perdre un point d'habilete
+<texte_fin>
+
+<ennemi_image_debut>
+images\\valvos.jpg
+<ennemi_image_fin>
+
+<ennemi_points_debut>
+6;6
+<ennemi_points_fin>
+
+<choix_paragraphes_debut>
+007;008
+<choix_paragraphes_fin>
+

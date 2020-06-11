@@ -1,0 +1,17 @@
+<texte_debut>
+Ceci est le texte du paragraphe 010
+vous irez au 017
+<texte_fin>
+
+<ennemi_image_debut>
+images\\010-cyclope_chauve-souris.jpg
+<ennemi_image_fin>
+
+<ennemi_points_debut>
+6;6
+<ennemi_points_fin>
+
+<choix_paragraphes_debut>
+017
+<choix_paragraphes_fin>
+

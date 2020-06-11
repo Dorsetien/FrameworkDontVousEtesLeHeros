@@ -1,0 +1,14 @@
+<texte_debut>
+Vous êtes au 017
+vous gagnez un point de chance
+
+Allez au 018 pour perdre 1 point de chance
+<texte_fin>
+
+<choix_paragraphes_debut>
+018
+<choix_paragraphes_fin>
+
+<points_de_chance_debut>
+1
+<points_de_chance_fin>

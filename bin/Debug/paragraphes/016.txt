@@ -1,0 +1,15 @@
+<texte_debut>
+Vous êtes au 016
+
+Vous mourrez d'une combustion spontanée
+
+retour au 001
+<texte_fin>
+
+<choix_paragraphes_debut>
+001
+<choix_paragraphes_fin>
+
+<pdv_debut>
+-1000
+<pdv_fin>

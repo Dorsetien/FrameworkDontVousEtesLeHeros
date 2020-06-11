@@ -1,0 +1,11 @@
+<texte_debut>
+Lire ceci paragraphe 012
+
+Votre chance vous rapporte un bouclier allez au 007
+
+<texte_fin>
+
+<choix_paragraphes_debut>
+007
+<choix_paragraphes_fin>
+

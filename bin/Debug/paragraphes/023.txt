@@ -1,0 +1,9 @@
+<texte_debut>
+En allant au 025, vous perdrez la dague et le bouclier (si vous les avez)
+
+Allez au 025
+<texte_fin>
+
+<choix_paragraphes_debut>
+025
+<choix_paragraphes_fin>

@@ -1,0 +1,13 @@
+<texte_debut>
+Ceci est le texte du paragraphe 003
+Vous perdez un point de vie
+Allez au 009 pour gagner 10 pièces d'or
+<texte_fin>
+
+<pdv_debut>
+-1
+<pdv_fin>
+
+<choix_paragraphes_debut>
+009
+<choix_paragraphes_fin>

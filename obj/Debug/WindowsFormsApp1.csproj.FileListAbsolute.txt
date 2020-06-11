@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\WindowsFormsApp1\bin\Debug\FrameWork Dont Vous Êtes Le Héros.exe.config
+C:\Users\User\source\repos\WindowsFormsApp1\bin\Debug\FrameWork Dont Vous Êtes Le Héros.exe
+C:\Users\User\source\repos\WindowsFormsApp1\bin\Debug\FrameWork Dont Vous Êtes Le Héros.pdb
+C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\FrameWork Dont Vous Êtes Le Héros.exe
+C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\FrameWork Dont Vous Êtes Le Héros.pdb

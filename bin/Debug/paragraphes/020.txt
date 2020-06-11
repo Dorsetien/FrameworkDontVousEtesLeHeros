@@ -1,0 +1,13 @@
+<texte_debut>
+Lire ceci paragraphe 020
+
+Vous perdez l'armure (si vous l'avez)
+<texte_fin>
+
+<choix_paragraphes_debut>
+023
+<choix_paragraphes_fin>
+
+<equipement_debut>
+-armure
+<equipement_fin>
