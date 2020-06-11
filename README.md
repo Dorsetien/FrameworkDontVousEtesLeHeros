@@ -3,22 +3,23 @@
 Mon premier programme en c# pour apprendre un peu plus ce langage.
 C# Windows Forms, .net Framework 4.7.2
 
-Framework dans lequel vous devez éditez uniquement des fichiers textes pour créer votre Jeu dont vous êtes le héros du type "Défis Fantastiques"
+Framework dans lequel vous devez éditer uniquement des fichiers textes pour créer votre Jeu dont vous êtes le héros du type "Défis Fantastiques"
 Allez dans le sous-répertoire bin\debug et vous pouvez éditer les fichiers .txt
 Chaque fichier (paragraphe) peut contenir :
 
-du texte
-un maximum de 5 choix par fichier
-une image pour votre héros à partir du répertoire bin\Debug\images
-afficher les images de vos ennemis dans le répertoire bin\Debug\images
-les points d'habileté et points de vie de l'ennemi
-modification de la quantité d'or, des points d'habileté, points de vie, points de chance
-possibilité de gérer 2 équipements par fichiers
-gestion de la "tentez votre chance"
-une image pour votre arriere plan à partir du répertoire bin\Debug\images
-gestion des combats avec dés
+- du texte
+- un maximum de 5 choix par fichier
+- une image pour votre héros à partir du répertoire bin\Debug\images
+- afficher les images de vos ennemis dans le répertoire bin\Debug\images
+- les points d'habileté et points de vie de l'ennemi
+- modification de la quantité d'or, des points d'habileté, points de vie, points de chance
+- possibilité de gérer 2 équipements par fichiers
+- gestion de la "tentez votre chance"
+- une image pour votre arriere plan à partir du répertoire bin\Debug\images
+- gestion des combats avec dés
+- les sons des dés sont inclus
 
-La ligne qui est lue et traitée est celle qui se situe entre <NomBalise_debut> et <NomBalise_fin>
+La ligne qui est lue et traitée est celle qui se situe entre des balises spécifiques de type <NomBalise_debut> et <NomBalise_fin>
 
 Voici les balises disponibles pour modifier ce qui se produit à chaque fichier(paragraphe):
 
