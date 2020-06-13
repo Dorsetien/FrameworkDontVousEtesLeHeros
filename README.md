@@ -1,10 +1,14 @@
 # FrameworkDontVousEtesLeHeros
+# https://sites.google.com/view/fdvelh
 
-Mon premier programme en c# pour apprendre un peu plus ce langage.
 C# Windows Forms, .net Framework 4.7.2
 
 Framework dans lequel vous devez éditer uniquement des fichiers textes pour créer votre Jeu dont vous êtes le héros du type "Défis Fantastiques"
-Allez dans le sous-répertoire bin\debug et vous pouvez éditer les fichiers .txt
+
+/****
+IMPORTANT : Allez dans le sous-répertoire bin\debug pour exécuter le logiciel (.exe) et placer vos fichiers.
+****/
+
 Chaque fichier (paragraphe) peut contenir :
 
 - du texte
@@ -47,11 +51,11 @@ images\\003-demon_volant.jpg
 Ex : 8 ou -8 (ajout de 8 pièces d'or ou soustraire 8 pièces d'or)
 <or_fin>
 
-<equipment_debut>
+<equipement_debut>
 Arc;1;1;1 (nom; chiffre qui influcence l'habilete(entier positif ou négatif); chiffre qui influence les points de vie(entier positif ou négatif);chiffre qui influence vos points de chance(entier positif ou négatif))
 <equipement_fin>
 
-<equipment2_debut>
+<equipement2_debut>
 Bouclier;2;2;2 (nom;chiffre qui influcence votre habileté(+ ou -); chiffre qui influcence vos points de vies (+ ou -);chiffre qui influence votre chance(+ ou -)
 <equipement2_fin>
 
