@@ -110,12 +110,12 @@ namespace WindowsFormsApp1
         /***********************************************************************************************************/
         /**************************************   Lecture <heros_image_debut>   ************************************/
         /***********************************************************************************************************/
-        public string CheminImageHeros_ou_ArrierePlan(string texte, string tag_Heros_debut, string tag_Heros_fin)
+        public string Chemin_Image_Heros_ArrierePlan_Ennemi_ou_Son(string texte, string balise_debut, string balise_fin)
         {
             string strTexte = texte;
             string StringFinale;
-            int Pos1 = strTexte.IndexOf(tag_Heros_debut) + tag_Heros_debut.Length;
-            int Pos2 = strTexte.IndexOf(tag_Heros_fin);
+            int Pos1 = strTexte.IndexOf(balise_debut) + balise_debut.Length;
+            int Pos2 = strTexte.IndexOf(balise_fin);
             StringFinale = strTexte.Substring(Pos1, Pos2 - Pos1);
             string cleaned = StringFinale.Replace("\n", "").Replace("\r", "");
             string cleaned2 = ".\\\\" + cleaned;
@@ -123,22 +123,7 @@ namespace WindowsFormsApp1
             return cleaned2;
         }
 
-        /***********************************************************************************************************/
-        /**************************************    Lecture <ennemi_image_debut>*************************************/
-        /***********************************************************************************************************/
-        public string CheminImageEnnemiEntreBalises(string texte, string ennemi_image_debut, string ennemi_image_fin)
-        {
-            string strTexte = texte;
-            string StringFinale;
-            int Pos1 = strTexte.IndexOf(ennemi_image_debut) + ennemi_image_debut.Length;
-            int Pos2 = strTexte.IndexOf(ennemi_image_fin);
-            StringFinale = strTexte.Substring(Pos1, Pos2 - Pos1);
-            string cleaned = StringFinale.Replace("\n", "").Replace("\r", "");
-            string cleaned2 = ".\\\\" + cleaned;
-
-            return cleaned2;
-        }
-
+        
         /***********************************************************************************************************/
         /************************************** Lecture <ennemi_points_debut>    ***********************************/
         /***********************************************************************************************************/
@@ -262,7 +247,7 @@ namespace WindowsFormsApp1
                 if (texte.Contains("<ennemi_image_debut>"))
                 {
 
-                    string chemin_image_ennemi = CheminImageEnnemiEntreBalises(texte, "<ennemi_image_debut>", "<ennemi_image_fin>");
+                    string chemin_image_ennemi = Chemin_Image_Heros_ArrierePlan_Ennemi_ou_Son(texte, "<ennemi_image_debut>", "<ennemi_image_fin>");
                     if (chemin_image_ennemi==".\\\\")
                     {
                         MessageBox.Show("erreur dans le chemin de l`image de l`ennemi");
@@ -384,6 +369,18 @@ namespace WindowsFormsApp1
                     Initialisation_Debut();
                 }
             }
+
+            /***********************************************************************************************************/
+            /**************************************     Lecture <son_debut>    *****************************************/
+            /***********************************************************************************************************/
+
+            if (texte.Contains("<son_debut>"))
+            {
+                string strSon = Chemin_Image_Heros_ArrierePlan_Ennemi_ou_Son(texte, "<son_debut>", "<son_fin>");
+                Son(strSon);
+            }
+
+
             /***********************************************************************************************************/
             /**************************************     Lecture <equipement_debut>    **********************************/
             /***********************************************************************************************************/
@@ -647,7 +644,7 @@ namespace WindowsFormsApp1
                 pictureBox_Ennemi.Visible = true;
                 string texte = System.IO.File.ReadAllText(@"paragraphes\000.txt");
                 string texte_traite = TexteEntreBalises(texte, "<texte_debut>", "<texte_fin>");
-                string texte_chemin_heros = CheminImageHeros_ou_ArrierePlan(texte, "<heros_image_debut>", "<heros_image_fin>");
+                string texte_chemin_heros = Chemin_Image_Heros_ArrierePlan_Ennemi_ou_Son(texte, "<heros_image_debut>", "<heros_image_fin>");
                 if (texte_chemin_heros == ".\\\\")
                 {
                     MessageBox.Show("erreur dans le chemin de l'image du héros");
@@ -661,7 +658,7 @@ namespace WindowsFormsApp1
                     pictureBox_Heros.Image = Image.FromFile(texte_chemin_heros);
                 }
 
-                string texte_chemin_arriereplan = CheminImageHeros_ou_ArrierePlan(texte, "<arriere_plan_image_debut>", "<arriere_plan_image_fin>");
+                string texte_chemin_arriereplan = Chemin_Image_Heros_ArrierePlan_Ennemi_ou_Son(texte, "<arriere_plan_image_debut>", "<arriere_plan_image_fin>");
                 if (texte_chemin_arriereplan == ".\\\\")
                 {
                     MessageBox.Show("erreur dans le chemin de l'image de l'arrière plan");
@@ -785,205 +782,7 @@ namespace WindowsFormsApp1
                             Initialisation_Debut();
                         }
 
-                        /*************************************************************************************************
-                        ***************** gestion couleur des dés (dé plus fort heros vs plus fort ennemi) ***************
-                        ***************** autre façon de combattre non implémentée (NE PAS UTILISER **********************
-                        *************************************************************************************************/
-
-
-                //if (de1 == de2 || de3 == de4)
-                //{
-
-                //    if (de1 > de3)
-                //    {
-                //        pictureBoxDe1Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //        pictureBoxDe1Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //    }
-
-                //    if (de1 < de3)
-                //    {
-                //        pictureBoxDe1Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //        pictureBoxDe1Ennemi.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //    }
-                //    if (de1 == de3)
-                //    {
-                //        pictureBoxDe1Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //        pictureBoxDe1Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //    }
-                //    if (de2 > de4)
-                //    {
-                //        pictureBoxDe2Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //        pictureBoxDe2Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //    }
-
-                //    if (de2 < de4)
-                //    {
-                //        pictureBoxDe2Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //        pictureBoxDe2Ennemi.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //    }
-                //    if (de2 == de4)
-                //    {
-                //        pictureBoxDe2Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //        pictureBoxDe2Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //    }
-
-                //}
-
-                //else if (de2 != de1 || de3 != de4)
-                //{
-                //    if (de1 > de2)
-                //    {
-                //        //d1 grand, d2 petit
-                //        if (de3 > de4)
-                //        {
-                //            if (de1 > de3)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-
-                //            }
-
-                //            if (de1 < de3)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(231, 228, 20);//De jaune
-                //            }
-                //            if (de1 == de3)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-
-                //            }
-                //            if (de2 > de4)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //            }
-                //            if (de2 < de4)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //            }
-                //            if (de2 == de4)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //            }
-
-                //        }
-                //        else if (de3 < de4)
-                //        {
-                //            if (de1 > de4)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-
-                //            }
-
-                //            if (de1 < de4)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(231, 228, 20);//De jaune
-                //            }
-                //            if (de1 == de4)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //            }
-                //            if (de2 > de3)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //            }
-                //            if (de2 < de3)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //            }
-                //            if (de2 == de3)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //            }
-                //        }
-
-                //    } //fin dé1 plus grand
-
-                //    else if (de1 < de2)
-                //    {
-                //        if (de3 > de4)
-                //        {
-                //            if (de2 > de3)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //            }
-
-                //            if (de2 < de3)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(231, 228, 20);//De jaune
-                //            }
-                //            if (de2 == de3)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //            }
-                //            if (de1 > de4)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //            }
-                //            if (de1 < de4)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //            }
-                //            if (de1 == de4)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //            }
-                //        }
-                //        else if (de3 < de4)
-                //        {
-                //            if (de2 > de4)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //            }
-
-                //            if (de2 < de4)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(231, 228, 20);//De jaune
-                //            }
-                //            if (de2 == de4)
-                //            {
-                //                pictureBoxDe2Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe2Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //            }
-                //            if (de1 > de3)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //            }
-                //            if (de1 < de3)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(169, 44, 44); //De rouge
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(231, 228, 20); //De jaune
-                //            }
-                //            if (de1 == de3)
-                //            {
-                //                pictureBoxDe1Heros.BackColor = Color.FromArgb(255, 255, 255); //De blanc
-                //                pictureBoxDe1Ennemi.BackColor = Color.FromArgb(255, 255, 255);//De blanc
-                //            }
-                //        }
-
-                //    }
-
-
-                //}
+                     
             }//fin du if (intPDVEnnemi > 0 && intPDVHeros > 0)
         } // fin du (etatCombat==1)
 
@@ -1070,6 +869,20 @@ namespace WindowsFormsApp1
             };
             player.Play();
         }
+
+        /***********************************************************************************************************/
+        /******************************************  fonction Jouer son  *******************************************/
+        /***********************************************************************************************************/
+        private void Son(string strSon)
+        {
+            SoundPlayer player = new SoundPlayer
+            {
+                SoundLocation = (strSon)
+            };
+            player.Play();
+        }
+
+
 
         /***********************************************************************************************************/
         /********************************************  fonction Afficher Des   *************************************/

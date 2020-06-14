@@ -57,6 +57,9 @@ namespace WindowsFormsApp1
             this.labelNomEnnemi = new System.Windows.Forms.Label();
             this.labelEquipement = new System.Windows.Forms.Label();
             this.panelHerosEnnemi = new System.Windows.Forms.Panel();
+            this.textBox_Total_Des_Ennemi = new System.Windows.Forms.TextBox();
+            this.label_vs = new System.Windows.Forms.Label();
+            this.textBox_Total_Des_Heros = new System.Windows.Forms.TextBox();
             this.listViewEquipement = new System.Windows.Forms.ListView();
             this.Équipement = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ModifHabilete = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -66,9 +69,6 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxOr = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox_Total_Des_Heros = new System.Windows.Forms.TextBox();
-            this.label_vs = new System.Windows.Forms.Label();
-            this.textBox_Total_Des_Ennemi = new System.Windows.Forms.TextBox();
             this.panelActionTexte.SuspendLayout();
             this.groupBoxChoix.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Heros)).BeginInit();
@@ -384,6 +384,29 @@ namespace WindowsFormsApp1
             this.panelHerosEnnemi.Size = new System.Drawing.Size(1533, 729);
             this.panelHerosEnnemi.TabIndex = 24;
             // 
+            // textBox_Total_Des_Ennemi
+            // 
+            this.textBox_Total_Des_Ennemi.Location = new System.Drawing.Point(259, 346);
+            this.textBox_Total_Des_Ennemi.Name = "textBox_Total_Des_Ennemi";
+            this.textBox_Total_Des_Ennemi.Size = new System.Drawing.Size(24, 20);
+            this.textBox_Total_Des_Ennemi.TabIndex = 32;
+            // 
+            // label_vs
+            // 
+            this.label_vs.AutoSize = true;
+            this.label_vs.Location = new System.Drawing.Point(235, 349);
+            this.label_vs.Name = "label_vs";
+            this.label_vs.Size = new System.Drawing.Size(18, 13);
+            this.label_vs.TabIndex = 31;
+            this.label_vs.Text = "vs";
+            // 
+            // textBox_Total_Des_Heros
+            // 
+            this.textBox_Total_Des_Heros.Location = new System.Drawing.Point(205, 346);
+            this.textBox_Total_Des_Heros.Name = "textBox_Total_Des_Heros";
+            this.textBox_Total_Des_Heros.Size = new System.Drawing.Size(24, 20);
+            this.textBox_Total_Des_Heros.TabIndex = 30;
+            // 
             // listViewEquipement
             // 
             this.listViewEquipement.BackColor = System.Drawing.SystemColors.Control;
@@ -401,7 +424,7 @@ namespace WindowsFormsApp1
             this.listViewEquipement.Location = new System.Drawing.Point(11, 483);
             this.listViewEquipement.MultiSelect = false;
             this.listViewEquipement.Name = "listViewEquipement";
-            this.listViewEquipement.Size = new System.Drawing.Size(289, 167);
+            this.listViewEquipement.Size = new System.Drawing.Size(473, 234);
             this.listViewEquipement.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewEquipement.TabIndex = 29;
             this.listViewEquipement.UseCompatibleStateImageBehavior = false;
@@ -459,29 +482,6 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(31, 18);
             this.label1.TabIndex = 24;
             this.label1.Text = "Or:";
-            // 
-            // textBox_Total_Des_Heros
-            // 
-            this.textBox_Total_Des_Heros.Location = new System.Drawing.Point(205, 346);
-            this.textBox_Total_Des_Heros.Name = "textBox_Total_Des_Heros";
-            this.textBox_Total_Des_Heros.Size = new System.Drawing.Size(24, 20);
-            this.textBox_Total_Des_Heros.TabIndex = 30;
-            // 
-            // label_vs
-            // 
-            this.label_vs.AutoSize = true;
-            this.label_vs.Location = new System.Drawing.Point(235, 349);
-            this.label_vs.Name = "label_vs";
-            this.label_vs.Size = new System.Drawing.Size(18, 13);
-            this.label_vs.TabIndex = 31;
-            this.label_vs.Text = "vs";
-            // 
-            // textBox_Total_Des_Ennemi
-            // 
-            this.textBox_Total_Des_Ennemi.Location = new System.Drawing.Point(259, 346);
-            this.textBox_Total_Des_Ennemi.Name = "textBox_Total_Des_Ennemi";
-            this.textBox_Total_Des_Ennemi.Size = new System.Drawing.Size(24, 20);
-            this.textBox_Total_Des_Ennemi.TabIndex = 32;
             // 
             // Form1
             // 
