@@ -10,3 +10,7 @@ Vous perdez un point d'habilete.  Allez au 017 pour gagner un point de chance.
 <habilete_debut>
 -1
 <habilete_fin>
+
+<son_debut>
+sons\\008-test.wav
+<son_fin>
