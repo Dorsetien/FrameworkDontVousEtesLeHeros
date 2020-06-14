@@ -22,6 +22,7 @@ Chaque fichier (paragraphe) peut contenir :
 - une image pour votre arriere plan à partir du répertoire bin\Debug\images
 - gestion des combats avec dés
 - les sons des dés sont inclus
+- lecture d'un fichier .wav possible par paragraphe/fichier
 
 La ligne qui est lue et traitée est celle qui se situe entre des balises spécifiques de type <NomBalise_debut> et <NomBalise_fin>
 
