@@ -84,4 +84,8 @@ Bouclier;2;2;2 (nom;chiffre qui influcence votre habileté(+ ou -); chiffre qui 
 images\\000-arriere-plan.png
 <arriere_plan_image_fin>
 
+<son_debut>
+sons\\008-test.wav
+<son_fin>
+
 // Pour mieux comprendre, télécharger le programme, exécuter le .exe et regarder les fichiers présents dans la structure sous bin\debug.  // Faites vos premières modifications à certains fichiers et voyez les résultats.
