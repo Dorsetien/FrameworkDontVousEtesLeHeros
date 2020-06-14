@@ -22,6 +22,7 @@ Chaque fichier (paragraphe) peut contenir :
 - une image pour votre arriere plan à partir du répertoire bin\Debug\images
 - gestion des combats avec dés
 - les sons des dés sont inclus
+- lecture d'un fichier .wav possible par paragraphe/fichier
 
 La ligne qui est lue et traitée est celle qui se situe entre des balises spécifiques de type <NomBalise_debut> et <NomBalise_fin>
 
@@ -82,5 +83,9 @@ Bouclier;2;2;2 (nom;chiffre qui influcence votre habileté(+ ou -); chiffre qui 
 <arriere_plan_image_debut>
 images\\000-arriere-plan.png
 <arriere_plan_image_fin>
+
+<son_debut>
+sons\\008-test.wav
+<son_fin>
 
 // Pour mieux comprendre, télécharger le programme, exécuter le .exe et regarder les fichiers présents dans la structure sous bin\debug.  // Faites vos premières modifications à certains fichiers et voyez les résultats.
