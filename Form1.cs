@@ -569,7 +569,7 @@ namespace WindowsFormsApp1
 
                     if (total_des_chance <= intChanceHeros)
                     {
-                        MessageBox.Show("Vous êtes chanceux");
+                        MessageBox.Show("Vous avez roulé " + total_des_chance + " , vous êtes chanceux");
                         radioButton2.Visible = false;
                         radioButton1.Checked = true;
 
@@ -577,7 +577,7 @@ namespace WindowsFormsApp1
 
                     else
                     {
-                        MessageBox.Show("Vous êtes malchanceux");
+                        MessageBox.Show("Vous avez roulé " + total_des_chance + " , vous êtes malchanceux");
                         intChanceHeros--;
                         radioButton1.Visible = false;
                         radioButton2.Checked = true;
@@ -726,8 +726,9 @@ namespace WindowsFormsApp1
                         Afficher_Resultat_De(3, de3);
                         Afficher_Resultat_De(4, de4);
                         Son_2des();
-
+                        /******************************************************************************/
                         // gestion du combat (dés Heros + habileté Heros) vs (dés Ennemi + Habileté Ennemi)
+                        /******************************************************************************/
 
                         textBox_Total_Des_Heros.Text = (de1 + de2 + intHabileteHeros).ToString();
                         textBox_Total_Des_Ennemi.Text = (de3 + de4 + intHabileteEnnemi).ToString();
