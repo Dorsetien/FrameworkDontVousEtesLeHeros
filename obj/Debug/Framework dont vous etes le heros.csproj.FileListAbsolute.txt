@@ -8,3 +8,13 @@ C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\Framework dont vous etes l
 C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\Framework dont vous etes le heros.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\FrameWork Dont Vous Êtes Le Héros.exe
 C:\Users\User\source\repos\WindowsFormsApp1\obj\Debug\FrameWork Dont Vous Êtes Le Héros.pdb
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\bin\Debug\FrameWork Dont Vous Êtes Le Héros.exe.config
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\bin\Debug\FrameWork Dont Vous Êtes Le Héros.exe
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\bin\Debug\FrameWork Dont Vous Êtes Le Héros.pdb
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\obj\Debug\Framework dont vous etes le heros.csprojAssemblyReference.cache
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\obj\Debug\Framework dont vous etes le heros.csproj.GenerateResource.cache
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\obj\Debug\Framework dont vous etes le heros.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\obj\Debug\FrameWork Dont Vous Êtes Le Héros.exe
+C:\Users\User\source\repos\WindowsFormsApp1\FrameworkDontVousEtesLeHeros\obj\Debug\FrameWork Dont Vous Êtes Le Héros.pdb

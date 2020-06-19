@@ -105,6 +105,7 @@ namespace WindowsFormsApp1
             // 
             // groupBoxChoix
             // 
+            this.groupBoxChoix.AutoSize = true;
             this.groupBoxChoix.Controls.Add(this.radioButton5);
             this.groupBoxChoix.Controls.Add(this.button1);
             this.groupBoxChoix.Controls.Add(this.radioButton4);
@@ -113,7 +114,7 @@ namespace WindowsFormsApp1
             this.groupBoxChoix.Controls.Add(this.radioButton1);
             this.groupBoxChoix.Location = new System.Drawing.Point(3, 28);
             this.groupBoxChoix.Name = "groupBoxChoix";
-            this.groupBoxChoix.Size = new System.Drawing.Size(145, 205);
+            this.groupBoxChoix.Size = new System.Drawing.Size(151, 208);
             this.groupBoxChoix.TabIndex = 8;
             this.groupBoxChoix.TabStop = false;
             this.groupBoxChoix.Text = "Choix";
@@ -495,6 +496,7 @@ namespace WindowsFormsApp1
             this.Text = "Framework Dont Vous Êtes Le Héros";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelActionTexte.ResumeLayout(false);
+            this.panelActionTexte.PerformLayout();
             this.groupBoxChoix.ResumeLayout(false);
             this.groupBoxChoix.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Heros)).EndInit();
