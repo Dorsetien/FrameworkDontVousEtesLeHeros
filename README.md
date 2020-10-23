@@ -1,5 +1,9 @@
+Ce projet a été traduit à l'anglais et amélioré au https://github.com/Dorsetien/FightingFantasyWinFormsEngine
+
+Merci de vous référer au nouveau projet.
+
+
 # FrameworkDontVousEtesLeHeros
-# https://sites.google.com/view/fdvelh
 
 C# Windows Forms, .net Framework 4.7.2
 
